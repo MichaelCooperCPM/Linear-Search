@@ -58,9 +58,9 @@ namespace Linear_Search
         // Linear search algorithm, returns true or false depending if value passed value is found in passed array
         bool LinearSearch(int[] array, int searchedValue)
         {
-            foreach (int i in array)
+            foreach (int value in array)
             {
-                if (i == searchedValue)
+                if (value == searchedValue)
                 {
                     return true;
                 }
