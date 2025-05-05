@@ -34,11 +34,13 @@
             DisplayArrayListbox = new ListBox();
             label2 = new Label();
             SearchResultLabel = new Label();
+            SearchedValueTextbox = new TextBox();
+            LinearSearchButton = new Button();
             SuspendLayout();
             // 
             // GenerateArrayButton
             // 
-            GenerateArrayButton.Location = new Point(299, 135);
+            GenerateArrayButton.Location = new Point(299, 119);
             GenerateArrayButton.Name = "GenerateArrayButton";
             GenerateArrayButton.Size = new Size(161, 67);
             GenerateArrayButton.TabIndex = 0;
@@ -65,7 +67,7 @@
             // DisplayArrayListbox
             // 
             DisplayArrayListbox.FormattingEnabled = true;
-            DisplayArrayListbox.Location = new Point(299, 222);
+            DisplayArrayListbox.Location = new Point(299, 192);
             DisplayArrayListbox.Name = "DisplayArrayListbox";
             DisplayArrayListbox.Size = new Size(161, 124);
             DisplayArrayListbox.TabIndex = 3;
@@ -73,7 +75,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(299, 373);
+            label2.Location = new Point(309, 452);
             label2.Name = "label2";
             label2.Size = new Size(42, 15);
             label2.TabIndex = 4;
@@ -82,17 +84,35 @@
             // SearchResultLabel
             // 
             SearchResultLabel.AutoSize = true;
-            SearchResultLabel.Location = new Point(347, 373);
+            SearchResultLabel.Location = new Point(357, 452);
             SearchResultLabel.Name = "SearchResultLabel";
             SearchResultLabel.Size = new Size(103, 15);
             SearchResultLabel.TabIndex = 5;
             SearchResultLabel.Text = "Search not yet run";
             // 
+            // SearchedValueTextbox
+            // 
+            SearchedValueTextbox.Location = new Point(333, 353);
+            SearchedValueTextbox.Name = "SearchedValueTextbox";
+            SearchedValueTextbox.Size = new Size(100, 23);
+            SearchedValueTextbox.TabIndex = 6;
+            // 
+            // LinearSearchButton
+            // 
+            LinearSearchButton.Location = new Point(316, 404);
+            LinearSearchButton.Name = "LinearSearchButton";
+            LinearSearchButton.Size = new Size(117, 23);
+            LinearSearchButton.TabIndex = 7;
+            LinearSearchButton.Text = "Run Linear Search";
+            LinearSearchButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 562);
+            Controls.Add(LinearSearchButton);
+            Controls.Add(SearchedValueTextbox);
             Controls.Add(SearchResultLabel);
             Controls.Add(label2);
             Controls.Add(DisplayArrayListbox);
@@ -113,5 +133,7 @@
         private ListBox DisplayArrayListbox;
         private Label label2;
         private Label SearchResultLabel;
+        private TextBox SearchedValueTextbox;
+        private Button LinearSearchButton;
     }
 }
