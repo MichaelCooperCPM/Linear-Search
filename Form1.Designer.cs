@@ -28,12 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            GenerateArrayButton = new Button();
+            ArraySizeTextbox = new TextBox();
+            label1 = new Label();
+            DisplayArrayListbox = new ListBox();
+            label2 = new Label();
+            SearchResultLabel = new Label();
+            SuspendLayout();
+            // 
+            // GenerateArrayButton
+            // 
+            GenerateArrayButton.Location = new Point(299, 135);
+            GenerateArrayButton.Name = "GenerateArrayButton";
+            GenerateArrayButton.Size = new Size(161, 67);
+            GenerateArrayButton.TabIndex = 0;
+            GenerateArrayButton.Text = "Generate Array";
+            GenerateArrayButton.UseVisualStyleBackColor = true;
+            GenerateArrayButton.Click += GenerateArrayButton_Click;
+            // 
+            // ArraySizeTextbox
+            // 
+            ArraySizeTextbox.Location = new Point(333, 90);
+            ArraySizeTextbox.Name = "ArraySizeTextbox";
+            ArraySizeTextbox.Size = new Size(100, 23);
+            ArraySizeTextbox.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(257, 51);
+            label1.Name = "label1";
+            label1.Size = new Size(281, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Enter the number of indexes for the generated array:";
+            // 
+            // DisplayArrayListbox
+            // 
+            DisplayArrayListbox.FormattingEnabled = true;
+            DisplayArrayListbox.Location = new Point(299, 222);
+            DisplayArrayListbox.Name = "DisplayArrayListbox";
+            DisplayArrayListbox.Size = new Size(161, 124);
+            DisplayArrayListbox.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(299, 373);
+            label2.Name = "label2";
+            label2.Size = new Size(42, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Result:";
+            // 
+            // SearchResultLabel
+            // 
+            SearchResultLabel.AutoSize = true;
+            SearchResultLabel.Location = new Point(347, 373);
+            SearchResultLabel.Name = "SearchResultLabel";
+            SearchResultLabel.Size = new Size(103, 15);
+            SearchResultLabel.TabIndex = 5;
+            SearchResultLabel.Text = "Search not yet run";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(SearchResultLabel);
+            Controls.Add(label2);
+            Controls.Add(DisplayArrayListbox);
+            Controls.Add(label1);
+            Controls.Add(ArraySizeTextbox);
+            Controls.Add(GenerateArrayButton);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button GenerateArrayButton;
+        private TextBox ArraySizeTextbox;
+        private Label label1;
+        private ListBox DisplayArrayListbox;
+        private Label label2;
+        private Label SearchResultLabel;
     }
 }
